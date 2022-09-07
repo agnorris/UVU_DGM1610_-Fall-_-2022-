@@ -194,3 +194,133 @@ namespace MyApplication
     }
   }
 }
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int x = 50 + 37;
+      Console.WriteLine(x);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int x = 50 + 37;
+      int sum = x + 92;
+      int sum2 = sum + 8;
+      Console.WriteLine(sum2);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int x = 50 - 37;
+      Console.WriteLine(x);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int x = 50 * 37;
+      Console.WriteLine(x);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int x = 50 / 37;
+      Console.WriteLine(x);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int x = 50 % 37;
+      Console.WriteLine(x);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int x = 50++;
+      Console.WriteLine(x);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int x = 50--;
+      Console.WriteLine(x);
+    }
+  }
+}
