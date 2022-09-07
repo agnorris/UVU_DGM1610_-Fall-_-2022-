@@ -61,3 +61,80 @@ namespace MyApplication
     }
   }
 }
+
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int myNum = 7;
+      Console.WriteLine(myNum);
+      double myDoubleNum = 6.03;
+      Console.WriteLine(myDoubleNum);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int myNum = 7;
+      Console.WriteLine(myNum);
+      char myLetter = 'T';
+      Console.WriteLine(myLetter);
+      char yourLetter = 'a';
+      Console.WriteLine(yourLetter);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int myNum = 7;
+      Console.WriteLine(myNum);
+      bool myBool = true;
+      Console.WriteLine(myBool);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int myNum = 7;
+      Console.WriteLine(myNum);
+      bool myBool = true;
+      Console.WriteLine(myBool);
+      string myText = "Hello";
+      Console.WriteLine(myText);
+    }
+  }
+}
