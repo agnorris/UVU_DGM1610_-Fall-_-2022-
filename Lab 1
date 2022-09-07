@@ -138,3 +138,59 @@ namespace MyApplication
     }
   }
 }
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int myNum = 7;
+      Console.WriteLine(myNum);
+      bool myBool = true;
+      Console.WriteLine(myBool);
+      string myText = "Hello";
+      Console.WriteLine(myText);
+      long thisNum = 1234567L;
+      Console.WriteLine(thisNum);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      float myNum = 6.03f;
+      Console.WriteLine(myNum);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      float myNum = 67e4f;
+      double thisNum = 36e3d;
+      Console.WriteLine(myNum);
+      Console.WriteLine(thisNum);
+    }
+  }
+}
