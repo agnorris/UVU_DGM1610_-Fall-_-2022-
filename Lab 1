@@ -11,3 +11,53 @@ namespace MyApplication
     }
   }
 }
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int myNum = 7;
+      Console.WriteLine(myNum);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int myNum;
+      myNum = 7;
+      Console.WriteLine(myNum);
+    }
+  }
+}
+
+using System;
+
+namespace MyApplication
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+     string name = "Aubrey"; 
+      Console.WriteLine(name);  
+      int myNum = 7;
+      myNum = 603;
+      Console.WriteLine(myNum);
+    }
+  }
+}
