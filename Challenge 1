@@ -33,3 +33,61 @@ public class HelloWorld
 		Console.WriteLine("Hello World");
 	}
 }
+
+Hero Classes
+
+using System;
+
+public class Program
+{
+	public Hero heroOne;
+	public Hero heroTwo;
+	public Weapon swordOne;
+	public Weapon swordTwo;
+	
+	public void Main()
+	{
+		heroOne = new Hero();
+		heroTwo = new Hero();
+		
+		heroOne.health = 2;
+		heroOne.powerLevel = 5;
+		heroOne.strength = 3;
+		
+		heroTwo.health = 3;
+		heroTwo.powerLevel = 1;
+		heroTwo.strength = 4;
+		
+		swordOne = new Weapon();
+		swordTwo = new Weapon();
+		
+		swordOne.name = "Excalibur";
+		swordTwo.name = "Cutlass";
+		
+		swordOne.strength = 2;
+		swordTwo.strength = 1;
+		
+		Console.WriteLine("Hero One Health");
+		Console.WriteLine(heroOne.health);
+		Console.WriteLine("Hero One Power");
+		Console.WriteLine(heroOne.powerLevel);
+		Console.WriteLine("Hero One Strength");
+		Console.WriteLine(heroOne.strength + swordTwo.strength);
+		
+		Console.WriteLine("Hero Two Health");
+		Console.WriteLine(heroTwo.health);
+		Console.WriteLine("Hero Two Power");
+		Console.WriteLine(heroTwo.powerLevel);
+		Console.WriteLine("Hero Two Strength");
+		Console.WriteLine(heroTwo.strength + swordOne.strength);
+	}
+}
+public class Hero{
+	public int health;
+	public int powerLevel;
+	public int strength;
+}
+public class Weapon{
+	public string name;
+	public int strength;
+}
