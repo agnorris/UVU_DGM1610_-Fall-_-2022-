@@ -1,3 +1,29 @@
+Class Example
+
+using System;
+
+public class ClassExample
+{
+
+}
+
+public class ClassWithVariables
+{
+	public int number = 2;
+    public string userName = "Bob";
+	public string tagLine = "Say goodbye to the trucks, kids, because tomorrow we are taking back the street.";
+}
+
+public class ClassWithFunctions
+{
+	public static void Main()
+    {
+    	Console.WriteLine("Running Function");
+		Console.WriteLine("Bob");
+		Console.WriteLine("Say goodbye to the trucks, kids, because tomorrow we are taking back the street.");
+    }
+}
+
 Correct the Errors
 
 With Errors:
