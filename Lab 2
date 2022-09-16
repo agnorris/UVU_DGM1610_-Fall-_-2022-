@@ -1,0 +1,82 @@
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		if (8 > 6)
+		{
+		Console.WriteLine("True");
+		}
+	}
+}
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int x = 4;
+		int y = 8;
+		if (y > x)
+		{
+		Console.WriteLine("True, Y is greater than X");
+		}
+	}
+}
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int x = 8;
+		int y = 4;
+		if (y > x)
+		{
+		Console.WriteLine("True, Y is greater than X");
+		}
+		else
+		{
+		Console.WriteLine("False");
+	}
+	}
+}
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int time = 6;
+		if (time < 12)
+		{
+		Console.WriteLine("Good Morning");
+		}
+		else if (time > 18)
+		{
+		Console.WriteLine("Goodnight");
+		}
+		else
+		{
+		Console.WriteLine("Good Afternoon");
+
+	}
+	}
+}
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		int x = 8;
+		int y = 4;
+		string result = (y > x) ? ("True, Y is greater than X") : ("False");
+		Console.WriteLine(result);
+		}
+}
