@@ -68,3 +68,46 @@ public class Program
 		}
 	}
 }
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string[] dogs = {"Poodle", "Golden Retriever", "German Shepherd", "Dalmation"};
+		foreach (string dog in dogs)
+		{
+			Console.WriteLine(dog);
+			Console.WriteLine(dogs.Length);
+		}
+	}
+}
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string[] dogs = {"Poodle", "Golden Retriever", "German Shepherd", "Dalmation"};
+		for (int i = 0; i < dogs.Length; i++)
+		{
+			Console.WriteLine(dogs[i]);
+		}
+	}
+}
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string[] dogs = {"Poodle", "Golden Retriever", "German Shepherd", "Dalmation"};
+		foreach (string i in dogs)
+		{
+			Console.WriteLine(i);
+		}
+	}
+}
