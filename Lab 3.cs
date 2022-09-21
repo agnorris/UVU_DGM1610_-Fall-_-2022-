@@ -111,3 +111,20 @@ public class Program
 		}
 	}
 }
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string[] dogs = {"Poodle", "Golden Retriever", "German Shepherd", "Dalmation"};
+		int i = 0;
+		do
+		{
+			Console.WriteLine(dogs[i]);
+			i++;
+		}
+		while (i < dogs.Length);
+	}
+}
