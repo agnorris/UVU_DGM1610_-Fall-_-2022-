@@ -30,3 +30,17 @@ public class Program
 		}
 	}
 }
+
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string[] treats = {"Cupcake", "Brownie", "Cake", "Ice Cream"};
+		foreach (string treat in treats)
+		{
+			Console.WriteLine(treat);
+		}
+	}
+}
