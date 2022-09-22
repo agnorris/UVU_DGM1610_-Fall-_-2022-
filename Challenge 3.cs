@@ -15,3 +15,18 @@ public class Program
 	}
 }
 
+using System;
+					
+public class Program
+{
+	public static void Main()
+	{
+		string[] stats = {"Strength", "Health", "Agility", "Speed", "Attack"};
+		int i = 0;
+		while (i < 5)
+		{
+			Console.WriteLine("i");
+			i++;
+		}
+	}
+}
