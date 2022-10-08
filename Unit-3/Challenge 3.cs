@@ -13,12 +13,7 @@ public class Program
 			Console.WriteLine(attacks[i]);
 		}
 	}
-}
 
-using System;
-					
-public class Program
-{
 	public static void Main()
 	{
 		string[] stats = {"Strength", "Health", "Agility", "Speed", "Attack"};
@@ -29,12 +24,7 @@ public class Program
 			i++;
 		}
 	}
-}
 
-using System;
-					
-public class Program
-{
 	public static void Main()
 	{
 		string[] treats = {"Cupcake", "Brownie", "Cake", "Ice Cream"};
