@@ -11,12 +11,7 @@ public class Program
 			i++;
 		}
 	}
-}
 
-using System;
-					
-public class Program
-{
 	public static void Main()
 	{
 		int i = 0;
@@ -27,12 +22,7 @@ public class Program
 		}
 		while (i < 5);
 	}
-}
-
-using System;
-					
-public class Program
-{
+	
 	public static void Main()
 	{
 		for (int i = 0; i <5; i++)
@@ -40,12 +30,7 @@ public class Program
 			Console.WriteLine("i");
 		}
 	}
-}
 
-using System;
-					
-public class Program
-{
 	public static void Main()
 	{
 		for (int i = 0; i <10; i=i+2)
@@ -53,12 +38,7 @@ public class Program
 			Console.WriteLine("i");
 		}
 	}
-}
 
-using System;
-					
-public class Program
-{
 	public static void Main()
 	{
 		string[] dogs = {"Poodle", "Golden Retriever", "German Shepherd", "Dalmation"};
@@ -67,12 +47,7 @@ public class Program
 			Console.WriteLine(dog);
 		}
 	}
-}
 
-using System;
-					
-public class Program
-{
 	public static void Main()
 	{
 		string[] dogs = {"Poodle", "Golden Retriever", "German Shepherd", "Dalmation"};
@@ -82,12 +57,7 @@ public class Program
 			Console.WriteLine(dogs.Length);
 		}
 	}
-}
 
-using System;
-					
-public class Program
-{
 	public static void Main()
 	{
 		string[] dogs = {"Poodle", "Golden Retriever", "German Shepherd", "Dalmation"};
@@ -96,12 +66,7 @@ public class Program
 			Console.WriteLine(dogs[i]);
 		}
 	}
-}
 
-using System;
-					
-public class Program
-{
 	public static void Main()
 	{
 		string[] dogs = {"Poodle", "Golden Retriever", "German Shepherd", "Dalmation"};
@@ -110,12 +75,7 @@ public class Program
 			Console.WriteLine(i);
 		}
 	}
-}
 
-using System;
-					
-public class Program
-{
 	public static void Main()
 	{
 		string[] dogs = {"Poodle", "Golden Retriever", "German Shepherd", "Dalmation"};
