@@ -1,16 +1,19 @@
 using UnityEngine;
 
-[CreateAssetMenu]
-public class ColorData : ScriptableObject
+namespace Unit_4_Challenge
 {
-    public byte red;
-    public byte green;
-    public byte blue;
-
-    public void RotateColor()
+    [CreateAssetMenu]
+    public class ColorData : ScriptableObject
     {
-        red += 3;
-        green += 1;
-        blue += 2;
+        public byte red;
+        public byte green;
+        public byte blue;
+
+        public void RotateColor()
+        {
+            red += 3;
+            green += 1;
+            blue += 2;
+        }
     }
 }

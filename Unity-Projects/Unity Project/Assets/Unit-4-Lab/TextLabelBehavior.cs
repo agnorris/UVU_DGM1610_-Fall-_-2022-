@@ -1,16 +1,19 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Text))]
-
-public class TextLabelBehavior : MonoBehaviour
+namespace Unit_4_Lab
 {
-    public Text label;
-    public FloatData  dataObj;
+    [RequireComponent(typeof(Text))]
 
-    private void Start()
+    public class TextLabelBehavior : MonoBehaviour
     {
-        label = GetComponent<Text>();
-        label.text = dataObj.value.ToString();
+        public Text label;
+        public FloatData  dataObj;
+
+        private void Start()
+        {
+            label = GetComponent<Text>();
+            label.text = dataObj.value.ToString();
+        }
     }
 }

@@ -1,22 +1,25 @@
 using UnityEngine;
 
-[CreateAssetMenu]
-public class ChallengeVector3 : ScriptableObject
+namespace Unit_4_Challenge
 {
-    public Vector3 value;
-
-    public void IncrementX()
+    [CreateAssetMenu]
+    public class ChallengeVector3 : ScriptableObject
     {
-        value.Set(value.x + 1, value.y, value.z);
-    }
+        public Vector3 value;
 
-    public void IncrementY()
-    { 
-        value.Set(value.x, value.y + 1, value.z);   
-    }
+        public void IncrementX()
+        {
+            value.Set(value.x + 1, value.y, value.z);
+        }
 
-    public void IncrementZ()
-    { 
-        value.Set(value.x, value.y, value.z + 1); 
+        public void IncrementY()
+        { 
+            value.Set(value.x, value.y + 1, value.z);   
+        }
+
+        public void IncrementZ()
+        { 
+            value.Set(value.x, value.y, value.z + 1); 
+        }
     }
 }

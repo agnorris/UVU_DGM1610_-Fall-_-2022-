@@ -1,16 +1,19 @@
 using UnityEngine;
 
-[CreateAssetMenu]
-public class ChallengeIntData : ScriptableObject
+namespace Unit_4_Challenge
 {
-    public int value;
-
-    public void SetValue (int num)
-    { 
-        value = num; 
-    }
-    public void Increment()
+    [CreateAssetMenu]
+    public class ChallengeIntData : ScriptableObject
     {
-        value++;
+        public int value;
+
+        public void SetValue (int num)
+        { 
+            value = num; 
+        }
+        public void Increment()
+        {
+            value++;
+        }
     }
 }

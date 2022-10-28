@@ -1,15 +1,17 @@
 using UnityEngine;
-using UnityEngine.Events;
 
-public class SecondMonoBehaviorEvent : MonoBehaviour
+namespace Unit_5_Challenge
 {
-    public void OnCollisionEnter()
+    public class SecondMonoBehaviorEvent : MonoBehaviour
     {
-        Debug.Log("Collision");
-    }
+        public void OnCollisionEnter()
+        {
+            Debug.Log("Collision");
+        }
 
-    public void OnCollisionExit()
-    {
-        Debug.Log("No longer a collision");
+        public void OnCollisionExit()
+        {
+            Debug.Log("No longer a collision");
+        }
     }
 }

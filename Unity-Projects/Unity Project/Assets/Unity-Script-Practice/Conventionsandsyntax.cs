@@ -1,15 +1,17 @@
 using UnityEngine;
-using System.Collections;
 
-public class Conventionsandsyntax : MonoBehaviour
+namespace Unity_Script_Practice
 {
-    void Start()
+    public class Conventionsandsyntax : MonoBehaviour
     {
-        Debug.Log(transform.position.x);
-
-        if (transform.position.y <= 7f)
+        void Start()
         {
-            Debug.Log("Hi");
+            Debug.Log(transform.position.x);
+
+            if (transform.position.y <= 7f)
+            {
+                Debug.Log("Hi");
+            }
         }
     }
 }

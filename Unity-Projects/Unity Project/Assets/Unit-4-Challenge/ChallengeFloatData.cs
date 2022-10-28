@@ -1,12 +1,15 @@
 using UnityEngine;
 
-[CreateAssetMenu]
-public class ChallengeFloatData : ScriptableObject
+namespace Unit_4_Challenge
 {
-    public float value;
-
-    public void UpdateValue()
+    [CreateAssetMenu]
+    public class ChallengeFloatData : ScriptableObject
     {
-        value += 1.5f;
+        public float value;
+
+        public void UpdateValue()
+        {
+            value += 1.5f;
+        }
     }
 }

@@ -1,12 +1,15 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class EnterBehavior : MonoBehaviour
+namespace Unit_4_Challenge
 {
-    public UnityEvent enterEvent;
-
-    private void OnTriggerEnter(Collider other)
+    public class EnterBehavior : MonoBehaviour
     {
-        enterEvent.Invoke();
+        public UnityEvent enterEvent;
+
+        private void OnTriggerEnter(Collider other)
+        {
+            enterEvent.Invoke();
+        }
     }
 }

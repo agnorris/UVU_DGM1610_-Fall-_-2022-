@@ -1,23 +1,26 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-public class MonoEventsBehavior : MonoBehaviour
+namespace Unit_5_Lab
 {
-    public UnityEvent startEvent, awakeEvent, disableEvent;
-
-    private void Awake()
+    public class MonoEventsBehavior : MonoBehaviour
     {
-        awakeEvent.Invoke();
+        public UnityEvent startEvent, awakeEvent, disableEvent;
 
-    }
+        private void Awake()
+        {
+            awakeEvent.Invoke();
 
-    private void Start()
-    { 
-        startEvent.Invoke();
-    }
+        }
 
-    private void OnDisable()
-    {
-        disableEvent.Invoke();
+        private void Start()
+        { 
+            startEvent.Invoke();
+        }
+
+        private void OnDisable()
+        {
+            disableEvent.Invoke();
+        }
     }
 }

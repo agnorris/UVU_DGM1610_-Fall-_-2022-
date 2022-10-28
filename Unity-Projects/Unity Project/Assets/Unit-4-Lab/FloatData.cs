@@ -1,13 +1,16 @@
 using UnityEngine;
 
-[CreateAssetMenu]
-
-public class FloatData : ScriptableObject
+namespace Unit_4_Lab
 {
-    public float value;
+    [CreateAssetMenu]
 
-    public void UpdateValue(float num)
+    public class FloatData : ScriptableObject
     {
-        value += num;   
+        public float value;
+
+        public void UpdateValue(float num)
+        {
+            value += num;   
+        }
     }
 }

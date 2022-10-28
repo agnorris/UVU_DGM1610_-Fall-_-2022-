@@ -1,10 +1,12 @@
 using UnityEngine;
-using UnityEngine.Events;
 
-public class ThirdMonoBehaviorEvent : MonoBehaviour
+namespace Unit_5_Challenge
 {
-    public void OnMouseDrag()
+    public class ThirdMonoBehaviorEvent : MonoBehaviour
     {
-        Debug.Log("Object Moved");
+        public void OnMouseDrag()
+        {
+            Debug.Log("Object Moved");
+        }
     }
 }

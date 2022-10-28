@@ -1,15 +1,17 @@
 using UnityEngine;
-using UnityEngine.Events;
 
-public class FirstMonoEventsBehavior : MonoBehaviour
+namespace Unit_5_Challenge
 {
-    private void OnBecameVisible()
+    public class FirstMonoEventsBehavior : MonoBehaviour
     {
-        enabled = true;
-    }
+        private void OnBecameVisible()
+        {
+            enabled = true;
+        }
 
-    private void OnBecameInvisible()
-    {
-        enabled = false;
+        private void OnBecameInvisible()
+        {
+            enabled = false;
+        }
     }
 }
