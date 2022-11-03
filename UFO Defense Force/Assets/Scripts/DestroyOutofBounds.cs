@@ -9,7 +9,7 @@ public class DestroyOutofBounds : MonoBehaviour
    
     void Awake()
     {
-        //Time.timeScale = 1;
+        Time.timeScale = 1;
     }
     void Update()
     {
@@ -21,7 +21,7 @@ public class DestroyOutofBounds : MonoBehaviour
         {
             Debug.Log("Game Over!");
             Destroy(gameObject);
-            //Time.timeScale = 0;
+            Time.timeScale = 0;
         }
     }
 }
