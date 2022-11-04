@@ -43,6 +43,7 @@ namespace Unit_6_Challenge.Scripts
 
         private void OnTriggerEnter(Collider other)
         {
+            //trigger must be turned on for pickup
             Debug.Log("Powerup");
             Destroy(powerup);
         }
