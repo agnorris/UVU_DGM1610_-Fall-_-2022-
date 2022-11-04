@@ -1,4 +1,5 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -12,7 +13,9 @@ namespace Unit_6_Challenge.Scripts
         public float verticalInput;
         public float xRange;
         public float zRange;
-        public GameObject powerup;
+        public GameObject hpowerup;
+        public GameObject apowerup;
+        public GameObject dpowerup;
         void Update()
         {
             horizontalInput = Input.GetAxis("Horizontal");
@@ -43,9 +46,25 @@ namespace Unit_6_Challenge.Scripts
 
         private void OnTriggerEnter(Collider other)
         {
-            //trigger must be turned on for pickup
-            Debug.Log("Powerup");
-            Destroy(powerup);
+            if (hpowerup)
+            { 
+                //destroying this powerup
+                Debug.Log( "Health Powerup");
+                Destroy(other.GameObject());
+            }
+
+            if (apowerup)
+            {
+                Debug.Log("Attack Powerup");
+                Destroy(other.GameObject());
+            }
+
+            if (dpowerup)
+            {
+                //giving this log
+                Debug.Log("Defense Powerup");  
+                Destroy(other.GameObject());
+            }
         }
     }
 }
