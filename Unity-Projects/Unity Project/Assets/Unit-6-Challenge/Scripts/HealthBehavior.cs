@@ -1,14 +1,11 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
-using UnityEditor.UIElements;
 using UnityEngine;
-public class PowerupBehavior : MonoBehaviour
 
+public class HealthBehavior : MonoBehaviour
 {
+
     public float speed = 10f;
-    public GameObject health;
     public Color startcolor = Color.white;
     public Color endcolor = Color.red;
     public float interval = 1f;
@@ -25,3 +22,5 @@ public class PowerupBehavior : MonoBehaviour
     }
     
 }
+
+

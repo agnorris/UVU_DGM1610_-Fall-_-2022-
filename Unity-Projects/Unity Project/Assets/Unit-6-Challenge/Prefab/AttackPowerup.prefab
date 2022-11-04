@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5850980850889573589}
   - component: {fileID: 6656780386607829352}
   - component: {fileID: 6096103098811352914}
+  - component: {fileID: 345265221883819415}
   m_Layer: 0
   m_Name: AttackPowerup
   m_TagString: Untagged
@@ -26,14 +27,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3274243682206392305}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: -161.7, y: 0, z: 0}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &5850980850889573589
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -97,3 +98,19 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &345265221883819415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3274243682206392305}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3c02250051b6f4baf536810508eb45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 8
+  startcolor: {r: 1, g: 1, b: 1, a: 1}
+  endcolor: {r: 0, g: 1, b: 1, a: 1}
+  interval: 1

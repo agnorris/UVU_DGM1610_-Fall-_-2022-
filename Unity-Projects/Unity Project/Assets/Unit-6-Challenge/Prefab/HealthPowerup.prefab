@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7662259725507441161}
   - component: {fileID: 7662259725507441162}
   - component: {fileID: 7662259725507441157}
-  - component: {fileID: 7662259725507441156}
+  - component: {fileID: 9039085392780280442}
   m_Layer: 0
   m_Name: HealthPowerup
   m_TagString: Untagged
@@ -115,7 +115,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &7662259725507441156
+--- !u!114 &9039085392780280442
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,8 +124,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 7662259725507441163}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ede1f307021731c44b47c69028ee83e9, type: 3}
+  m_Script: {fileID: 11500000, guid: 782ad60e9fd68e24e9113292de510447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
-  health: {fileID: 0}
