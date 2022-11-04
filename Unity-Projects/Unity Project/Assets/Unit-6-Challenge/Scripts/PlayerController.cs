@@ -29,12 +29,12 @@ namespace Unit_6_Challenge.Scripts
             {
                 transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
             }
-            if (transform.position.x < -zRange)
+            if (transform.position.z < -zRange)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y, -zRange);
             }
 
-            if (transform.position.x > zRange)
+            if (transform.position.z > zRange)
             {
                 transform.position = new Vector3(transform.position.x, transform.position.y, zRange);
             }
