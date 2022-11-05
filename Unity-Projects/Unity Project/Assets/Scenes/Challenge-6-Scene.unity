@@ -420,7 +420,9 @@ MonoBehaviour:
   verticalInput: 0.25
   xRange: 136
   zRange: 67
-  powerup: {fileID: 0}
+  hpowerup: {fileID: 7662259725507441163, guid: 2dd22a5320bdcab48ae99d44355ece90, type: 3}
+  apowerup: {fileID: 3274243682206392305, guid: 7111e21c629a7da469cad2a419151d2e, type: 3}
+  dpowerup: {fileID: 1996903589989366788, guid: dde48f26e1aa297499bcbe003bfa6bc9, type: 3}
 --- !u!1 &1330321427
 GameObject:
   m_ObjectHideFlags: 0
@@ -544,7 +546,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be0c80aaa877da64895f5f0d008286e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ufoPrefabs: []
+  powerupPrefabs:
+  - {fileID: 7662259725507441163, guid: 2dd22a5320bdcab48ae99d44355ece90, type: 3}
+  - {fileID: 1996903589989366788, guid: dde48f26e1aa297499bcbe003bfa6bc9, type: 3}
+  - {fileID: 3274243682206392305, guid: 7111e21c629a7da469cad2a419151d2e, type: 3}
 --- !u!4 &1717596846
 Transform:
   m_ObjectHideFlags: 0

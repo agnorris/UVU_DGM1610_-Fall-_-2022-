@@ -13,9 +13,6 @@ namespace Unit_6_Challenge.Scripts
         public float verticalInput;
         public float xRange;
         public float zRange;
-        public GameObject hpowerup;
-        public GameObject apowerup;
-        public GameObject dpowerup;
         void Update()
         {
             horizontalInput = Input.GetAxis("Horizontal");
@@ -46,22 +43,18 @@ namespace Unit_6_Challenge.Scripts
 
         private void OnTriggerEnter(Collider other)
         {
-            if (hpowerup)
-            { 
-                //destroying this powerup
-                Debug.Log( "Health Powerup");
+            if (other.gameObject.name.StartsWith("Health"))
+            {
+              Debug.Log("Health Powerup");  
+              Destroy(other.GameObject());
+            }
+            if (other.gameObject.name.StartsWith("Attack"))
+            {
+                Debug.Log("Attack Powerup");  
                 Destroy(other.GameObject());
             }
-
-            if (apowerup)
+            if (other.gameObject.name.StartsWith("Defense"))
             {
-                Debug.Log("Attack Powerup");
-                Destroy(other.GameObject());
-            }
-
-            if (dpowerup)
-            {
-                //giving this log
                 Debug.Log("Defense Powerup");  
                 Destroy(other.GameObject());
             }
