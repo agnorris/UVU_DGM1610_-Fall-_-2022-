@@ -38,5 +38,6 @@ public class GameManager : MonoBehaviour
         gameOverText.gameObject.SetActive(true);
         endSound.Play(0);
         Time.timeScale = 0;
+        backgroundMusic.Pause();
     }
 }
