@@ -8,6 +8,7 @@ public class DetectCollision : MonoBehaviour
 {
     public ScoreManager scoreManager;
     public int scoreToGive;
+    public AudioSource explosionSound;
 
     void Start()
     {
@@ -19,5 +20,6 @@ public class DetectCollision : MonoBehaviour
         scoreManager.IncreaseScore(scoreToGive);
         Destroy(this.gameObject);
         Destroy(other.gameObject);
+        explosionSound.Play(0);
     }
 }
