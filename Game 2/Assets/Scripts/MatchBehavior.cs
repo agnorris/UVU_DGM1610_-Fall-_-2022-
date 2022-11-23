@@ -7,7 +7,8 @@ using UnityEngine.Events;
 public class MatchBehavior : MonoBehaviour
 {
     public ID idObj;
-    public UnityEvent matchEvent, noMatchEvent, NoMatchDelayedEvent;
+    public UnityEvent matchEvent, noMatchEvent, noMatchDelayedEvent;
+    public GameManager gameManager;
     private IEnumerator OnTriggerEnter(Collider other)
     {
         var tempObj = other.GetComponent<IDContainerBehavior>();
@@ -20,11 +21,12 @@ public class MatchBehavior : MonoBehaviour
         {
             matchEvent.Invoke();
         }
-        else
-        {
+        else {
+            Debug.Log("no match");
             noMatchEvent.Invoke();
+            gameManager.isGameOver = true;
             yield return new WaitForSeconds(0.5f);
-            NoMatchDelayedEvent.Invoke();
+            noMatchDelayedEvent.Invoke();
         }
     }
 }
