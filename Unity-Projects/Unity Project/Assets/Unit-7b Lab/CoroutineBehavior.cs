@@ -6,9 +6,9 @@ using UnityEngine.Events;
 
 public class CoroutineBehavior : MonoBehaviour
 {
-    public UnityEvent repeatEvent;
+    public UnityEvent startEvent, repeatEvent,endEvent;
 
-    public int counterNum = 3;
+    public IntData counterNum;
     public float seconds = 3.0f;
     private WaitForSeconds wfsobj;
     private WaitForFixedUpdate wffuobj;
@@ -17,11 +17,14 @@ public class CoroutineBehavior : MonoBehaviour
     {
         wfsobj = new WaitForSeconds(seconds);
         wffuobj = new WaitForFixedUpdate();
-
-        while (counterNum > 0)
+        startEvent.Invoke();
+        yield return wfsobj;
+        while (counterNum.value > 0)
         {
-            yield return wfsobj;
             repeatEvent.Invoke();
+            counterNum.value--;
+            yield return wfsobj;
         }
+        endEvent.Invoke();
     }
 }
