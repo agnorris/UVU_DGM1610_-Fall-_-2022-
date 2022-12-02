@@ -1,4 +1,5 @@
 using System.Globalization;
+using UnityEditor.Tilemaps;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
@@ -23,5 +24,10 @@ public class TextLabelBehavior : MonoBehaviour
     public void UpdateLabel(IntData obj)
     {
         label.text = obj.value.ToString(CultureInfo.InvariantCulture);
+    }
+
+    public void UpdateLabel(string str)
+    {
+        label.text = str;
     }
 }
