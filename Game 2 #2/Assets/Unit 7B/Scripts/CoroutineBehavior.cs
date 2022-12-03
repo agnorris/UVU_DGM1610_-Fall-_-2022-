@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -18,6 +18,8 @@ public class CoroutineBehavior : MonoBehaviour
 
     private void Start()
     {
+        wfsobj = new WaitForSeconds(seconds);
+        wffuobj = new WaitForFixedUpdate();
         startEvent.Invoke();
     }
 
@@ -30,19 +32,18 @@ public class CoroutineBehavior : MonoBehaviour
         }
     } 
     private IEnumerator Counting()
-         {
-             wfsobj = new WaitForSeconds(seconds);
-             wffuobj = new WaitForFixedUpdate();
-             startCountEvent.Invoke();
-             yield return wfsobj;
-             while (counterNum.value > 0)
-             {
-                 repeatCountEvent.Invoke();
-                 counterNum.value--;
-                 yield return wfsobj;
-             }
-             endCountEvent.Invoke();
-         }
+    {
+        
+        startCountEvent.Invoke();
+        yield return wfsobj;
+        while (counterNum.value > 0)
+        {
+            repeatCountEvent.Invoke();
+            counterNum.value--;
+            yield return wfsobj;
+        }
+        endCountEvent.Invoke();
+    }
     public void StartCounting()
     {
         StartCoroutine(Counting());
@@ -55,4 +56,4 @@ public class CoroutineBehavior : MonoBehaviour
         canRun = true;
         StartCoroutine(RepeatUntilFalse());
     }
-    }
+}
