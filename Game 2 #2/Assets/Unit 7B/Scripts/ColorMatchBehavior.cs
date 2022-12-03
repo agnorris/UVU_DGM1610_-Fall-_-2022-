@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,5 +16,11 @@ public class ColorMatchBehavior : MatchBehavior
     {
         var newColor = idObj as ColorID;
         renderer.color = newColor.value;
+    }
+
+    public void DestroyMatch(Collider other)
+    {
+        Destroy(this.gameObject);
+        Destroy(other.gameObject);
     }
 }
